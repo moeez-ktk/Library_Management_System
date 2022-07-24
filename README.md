@@ -1,5 +1,6 @@
 # Library_Management_System
 GUI Application for Library Mangament System made using JavaFx
+This App was made in collabartion with Haseeeb1 -> https://github.com/Haseeeb1
 
 Basic Features:
 1) Members Sign up Request. This request is forwarded to the admin. Account is only created if admin approves request.
