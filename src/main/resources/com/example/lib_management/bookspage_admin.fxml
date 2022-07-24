@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="956.0" stylesheets="@fxml.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lib_management.bookspage_controller">
+   <children>
+      <ImageView fitHeight="544.0" fitWidth="240.0" layoutY="44.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\bgbooks.jpg" />
+         </image>
+      </ImageView>
+      <TitledPane prefHeight="588.0" prefWidth="246.0" text="BOOKS" textFill="#16431e">
+         <font>
+            <Font name="Gill Sans Ultra Bold" size="22.0" />
+         </font>
+         <content>
+            <AnchorPane prefHeight="543.0" prefWidth="160.0">
+               <children>
+                  <ImageView fitHeight="507.0" fitWidth="205.0" layoutX="-2.0" opacity="0.77" pickOnBounds="true">
+                     <image>
+                        <Image url="@..\imgs\flower.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="39.0" fitWidth="40.0" layoutX="8.0" layoutY="374.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@..\imgs\icons8-disclaimer-64.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="7.0" layoutY="417.0" prefHeight="17.0" prefWidth="200.0" text="1).Reference books can never" textFill="#f60000" />
+                  <Label layoutX="9.0" layoutY="431.0" prefHeight="17.0" prefWidth="200.0" text="be issued." textFill="#fc0000" />
+                  <Label layoutX="8.0" layoutY="452.0" prefHeight="17.0" prefWidth="200.0" text="2).Fresh Arrivals can be issued" textFill="RED" />
+                  <Label layoutX="9.0" layoutY="465.0" prefHeight="17.0" prefWidth="200.0" text="two months after added date." textFill="RED" />
+                  <Label alignment="CENTER" layoutX="22.0" layoutY="58.0" text="CATEGORIES" textFill="#16431e">
+                     <font>
+                        <Font name="Gill Sans Ultra Bold Condensed" size="19.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="22.0" fitWidth="19.0" layoutY="56.0" opacity="0.35" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-categories-24.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="sc_books" layoutX="74.0" layoutY="134.0" mnemonicParsing="false" onAction="#showScienceBooks" prefHeight="22.0" prefWidth="84.0" text="Science" textFill="#398f78">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="All_books" alignment="TOP_LEFT" layoutX="24.0" layoutY="95.0" mnemonicParsing="false" onAction="#showAllBooks" prefHeight="23.0" prefWidth="135.0" text="      All" textFill="#081589">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fic_books" layoutX="75.0" layoutY="169.0" mnemonicParsing="false" onAction="#showFictionBooks" prefHeight="22.0" prefWidth="82.0" text="Fiction" textFill="#398f78">
+                     <font>
+                        <Font name="Franklin Gothic Medium Cond" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lit_books" layoutX="80.0" layoutY="207.0" mnemonicParsing="false" onAction="#showLiteratureBooks" prefHeight="22.0" prefWidth="82.0" text="Literature" textFill="#398f78">
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Reference_books" layoutX="28.0" layoutY="288.0" mnemonicParsing="false" onAction="#showReferenceBooks" prefHeight="23.0" prefWidth="136.0" text="Reference Books" textFill="#081589">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="fresharrivals" layoutX="28.0" layoutY="247.0" mnemonicParsing="false" onAction="#showFreshArrivals" onMouseClicked="#showFreshArrivals" prefHeight="23.0" prefWidth="136.0" text="Fresh Arrival" textFill="#081589">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="11.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="allicon" fitHeight="12.0" fitWidth="11.0" layoutX="25.0" layoutY="101.0" onMouseClicked="#showAllBooks" opacity="0.63" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-arrow-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="reficon" fitHeight="11.0" fitWidth="9.0" layoutX="31.0" layoutY="295.0" onMouseClicked="#showReferenceBooks" opacity="0.63" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-arrow-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="freshicon" fitHeight="14.0" fitWidth="11.0" layoutX="30.0" layoutY="252.0" opacity="0.63" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-arrow-64.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="51.0" layoutY="135.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-greater-than-30.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="52.0" layoutY="170.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-greater-than-30.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="21.0" fitWidth="18.0" layoutX="52.0" layoutY="208.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-greater-than-30.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="dash_btn" alignment="TOP_LEFT" layoutX="24.0" layoutY="14.0" mnemonicParsing="false" onAction="#goToDashboard" prefHeight="23.0" prefWidth="135.0" text="Dashboard" textFill="#081589">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="11.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="141.0" layoutY="8.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-books-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="edit_button" fitHeight="580.0" fitWidth="718.0" layoutX="240.0" layoutY="8.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\blackbg.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="books_table" layoutX="250.0" layoutY="79.0" prefHeight="434.0" prefWidth="701.0">
+        <columns>
+            <TableColumn fx:id="ID_col" prefWidth="41.0" text="id" />
+          <TableColumn fx:id="name_col" prefWidth="130.0" text="Name" />
+          <TableColumn fx:id="author_col" prefWidth="132.0" text="Author" />
+            <TableColumn fx:id="category_col" prefWidth="107.0" text="Category" />
+            <TableColumn fx:id="type_col" prefWidth="108.0" text="Type" />
+            <TableColumn fx:id="requested_col" prefWidth="102.0" text="Requested By" />
+            <TableColumn fx:id="dateadded_col" prefWidth="75.0" text="Date Added" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="247.0" layoutY="48.0" prefHeight="28.0" prefWidth="138.0" text="CATEGORY" textFill="#b8ea25">
+         <font>
+            <Font name="Elephant" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="13.0" fitWidth="718.0" layoutX="240.0" layoutY="-5.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\bluei.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="removebtn" alignment="TOP_LEFT" layoutX="371.0" layoutY="526.0" mnemonicParsing="false" onAction="#remove" prefHeight="24.0" prefWidth="78.0" text="     Remove" textFill="RED">
+         <font>
+            <Font name="Dutch 801 Extra Bold BT" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="editbtn" alignment="TOP_LEFT" layoutX="472.0" layoutY="528.0" mnemonicParsing="false" onAction="#edit" prefHeight="24.0" prefWidth="104.0" text="      Edit Details" textFill="RED">
+         <font>
+            <Font name="Dutch 801 Extra Bold BT" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="removeicon" fitHeight="18.0" fitWidth="17.0" layoutX="373.0" layoutY="530.0" onMouseClicked="#remove" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-remove-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="editicon" fitHeight="18.0" fitWidth="17.0" layoutX="477.0" layoutY="531.0" onMouseClicked="#edit" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-edit-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="264.0" layoutY="533.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-history-book-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="734.0" layoutY="567.0" opacity="0.66" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-copyright-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="752.0" layoutY="567.0" opacity="0.62" text="Pioneer" textFill="#b8ea25">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label layoutX="760.0" layoutY="574.0" opacity="0.51" text="Atheneum" textFill="#b8ea25">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="543.0" layoutY="564.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-date-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Date_time_label" layoutX="567.0" layoutY="567.0" prefHeight="17.0" prefWidth="163.0" text="Current date time" textFill="#b8ea25">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="hidden_lbl" layoutX="586.0" layoutY="531.0" text="No Book Selected" textFill="RED">
+         <font>
+            <Font name="Book Antiqua" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="647.0" layoutY="48.0" prefHeight="28.0" prefWidth="104.0" text="SEARCH" textFill="#b8ea25">
+         <font>
+            <Font name="Elephant" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="search" layoutX="763.0" layoutY="49.0" prefHeight="0.0" prefWidth="163.0" />
+   </children>
+</AnchorPane>

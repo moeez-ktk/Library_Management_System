@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="852.0" stylesheets="@fxml.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lib_management.issuedhistory_user">
+    <children>
+        <ImageView fitHeight="577.0" fitWidth="852.0" layoutY="1.0" pickOnBounds="true">
+            <image>
+                <Image url="@..\imgs\bggg.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="577.0" fitWidth="234.0" layoutX="621.0" pickOnBounds="true">
+            <image>
+                <Image url="@..\imgs\bggglibrary.jfif" />
+            </image>
+        </ImageView>
+        <TableView fx:id="table" layoutX="14.0" layoutY="96.0" prefHeight="417.0" prefWidth="596.0">
+            <columns>
+                <TableColumn fx:id="name_col" prefWidth="186.7999906539917" text="Book Name" />
+                <TableColumn fx:id="issue_date" prefWidth="101.59999084472656" text="Issue Date" />
+                <TableColumn fx:id="return_col" prefWidth="100.39996337890625" text="Return Date" />
+                <TableColumn fx:id="category" prefWidth="100.4000244140625" text="Category" />
+                <TableColumn fx:id="author" prefWidth="106.40008544921875" text="Author" />
+            </columns>
+        </TableView>
+        <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="543.0" layoutY="554.0" opacity="0.74" pickOnBounds="true">
+            <image>
+                <Image url="@..\imgs\icons8-copyright-64.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="559.0" layoutY="552.0" opacity="0.72" text="Pioneer" textFill="#b8ea25">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Label>
+        <Label layoutX="566.0" layoutY="560.0" opacity="0.69" text="Atheneum" textFill="#b8ea25">
+            <font>
+                <Font size="9.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="13.0" layoutY="18.0" prefHeight="40.0" prefWidth="214.0" text="ISSUED Books" textFill="#040946">
+            <font>
+                <Font name="Elephant" size="25.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="227.0" layoutY="27.0" pickOnBounds="true">
+            <image>
+                <Image url="@..\imgs\icons8-issue-58.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="66.0" layoutY="509.0" />
+        <Label alignment="CENTER" layoutX="32.0" layoutY="56.0" prefHeight="32.0" prefWidth="108.0" text="History:" textFill="#5000ff">
+            <font>
+                <Font name="Elephant" size="20.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="25.0" fitWidth="24.0" layoutX="23.0" layoutY="59.0" pickOnBounds="true">
+            <image>
+                <Image url="@..\imgs\icons8-history-64.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="356.0" layoutY="557.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-date-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Date_time_label" layoutX="376.0" layoutY="557.0" prefHeight="17.0" prefWidth="163.0" text="Current date time" textFill="#080052">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="dashboard" alignment="TOP_RIGHT" layoutX="55.0" layoutY="526.0" mnemonicParsing="false" onAction="#goToDashBoard" prefHeight="25.0" prefWidth="99.0" text="Dashboard" />
+      <ImageView fx:id="dashboard_icon" fitHeight="18.0" fitWidth="17.0" layoutX="61.0" layoutY="530.0" onMouseClicked="#goToDashBoard" pickOnBounds="true">
+         <image>
+            <Image url="@../imgs/icons8-return-30.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="issuedbtn" layoutX="178.0" layoutY="526.0" mnemonicParsing="false" onAction="#issued" prefHeight="25.0" prefWidth="80.0" text="Issued" />
+      <ImageView fx:id="issued_icon" fitHeight="25.0" fitWidth="17.0" layoutX="179.0" layoutY="531.0" onMouseClicked="#issued" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/icons8-order-history-30.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="search" layoutX="449.0" layoutY="48.0" prefHeight="3.0" prefWidth="153.0" />
+      <Label alignment="CENTER" layoutX="331.0" layoutY="47.0" prefHeight="28.0" prefWidth="104.0" text="SEARCH" textFill="#040946">
+         <font>
+            <Font name="Elephant" size="19.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

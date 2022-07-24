@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="586.0" prefWidth="940.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lib_management.admin_dashboard_controller">
+   <children>
+      <ImageView fitHeight="596.0" fitWidth="230.0" layoutY="25.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\bgmain.jpg" />
+         </image>
+      </ImageView>
+      <TitledPane fx:id="side_titlepane" prefHeight="621.0" prefWidth="224.0" text="LIBRARY MANAGER">
+         <content>
+            <AnchorPane prefHeight="576.0" prefWidth="248.0">
+               <children>
+                  <ImageView fitHeight="575.0" fitWidth="215.0" layoutX="-7.0">
+                     <image>
+                        <Image url="@..\imgs\greyback.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" layoutX="9.0" layoutY="93.0" prefHeight="22.0" prefWidth="68.0" text="admin" textFill="#ffdd00">
+                     <font>
+                        <Font name="Bank Gothic Medium BT" size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="10.0" fitWidth="15.0" layoutX="104.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@..\imgs\greendot11.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="120.0" layoutY="32.0" prefHeight="28.0" prefWidth="47.0" text="Online" textFill="#dcc31f">
+                     <font>
+                        <Font name="ArtifaktElement-Light" size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="81.0" fitWidth="86.0" layoutX="1.0" layoutY="13.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@..\imgs\icons8-system-administrator-male-32.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="dashboard_button" layoutX="45.0" layoutY="145.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="122.0" text="Dashboard" textFill="#2b79ba">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="Members_button" layoutX="44.0" layoutY="188.0" mnemonicParsing="false" onAction="#goToMembers" prefHeight="28.0" prefWidth="122.0" text="Members" textFill="#2b79ba">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="books_button" layoutX="43.0" layoutY="230.0" mnemonicParsing="false" onAction="#goToBooks" prefHeight="28.0" prefWidth="122.0" text="Books" textFill="#2b79ba">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="issued_button" layoutX="43.0" layoutY="273.0" mnemonicParsing="false" onAction="#goToIssue" prefHeight="28.0" prefWidth="122.0" text="Issued" textFill="#2b79ba">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="43.0" layoutY="318.0" mnemonicParsing="false" onAction="#goToRequests" prefHeight="28.0" prefWidth="122.0" text="Requests" textFill="#2b79ba">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="17.0" layoutY="145.0" opacity="0.53" pickOnBounds="true">
+                     <image>
+                        <Image url="@..\imgs\dashboard.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="16.0" layoutY="230.0" opacity="0.53" pickOnBounds="true">
+                     <image>
+                        <Image url="@..\imgs\books.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="17.0" layoutY="273.0" opacity="0.53" pickOnBounds="true">
+                     <image>
+                        <Image url="@..\imgs\isssued.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="17.0" layoutY="189.0" opacity="0.53" pickOnBounds="true">
+                     <image>
+                        <Image url="@..\imgs\members.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="43.0" fitWidth="29.0" layoutX="16.0" layoutY="313.0" opacity="0.53" pickOnBounds="true">
+                     <image>
+                        <Image url="@..\imgs\icons8-request-64 (1).png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="44.0" layoutY="366.0" mnemonicParsing="false" onAction="#goToHistory" prefHeight="28.0" prefWidth="122.0" text="Issue History" textFill="#2b79ba">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="43.0" fitWidth="29.0" layoutX="17.0" layoutY="356.0" opacity="0.53" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-request-64.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="17.0" layoutY="468.0" mnemonicParsing="false" onAction="#logout" prefHeight="28.0" prefWidth="149.0" text="Logout" textFill="#b82c2c">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="44.0" layoutY="417.0" mnemonicParsing="false" onAction="#addBook" prefHeight="28.0" prefWidth="122.0" text="Add Book" textFill="#2b79ba">
+                     <font>
+                        <Font name="ArtifaktElement-Black" size="13.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="43.0" fitWidth="40.0" layoutX="10.0" layoutY="411.0" opacity="0.53" pickOnBounds="true">
+                     <image>
+                        <Image url="@../imgs/icons8-books-100.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets top="45.0" />
+               </opaqueInsets>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <ImageView fitHeight="596.0" fitWidth="712.0" layoutX="229.0" layoutY="25.0" opacity="0.34" pickOnBounds="true">
+         <image>
+            <Image url="@../imgs/bggche.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="246.0" layoutY="27.0" prefHeight="69.0" prefWidth="368.0" text="Library Manager" textFill="#4d51bd">
+         <font>
+            <Font name="Bodoni MT" size="49.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="books_info" layoutX="254.0" layoutY="123.0" prefHeight="134.0" prefWidth="186.0">
+         <children>
+            <ImageView fitHeight="142.0" fitWidth="188.0" layoutX="-1.0" layoutY="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@..\imgs\yellow.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="86.0" layoutX="87.0" layoutY="4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@..\imgs\icons8-books-48.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="19.0" layoutX="7.0" layoutY="115.0" onMouseClicked="#goToBooks" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\imgs\icons8-info-64 (1).png" />
+               </image>
+            </ImageView>
+            <Button layoutX="5.0" layoutY="113.0" mnemonicParsing="false" onAction="#goToBooks" opacity="0.7" prefHeight="7.0" prefWidth="86.0" text="More Info" textFill="#1c37c1">
+               <font>
+                  <Font name="ArtifaktElement-Black" size="8.0" />
+               </font>
+            </Button>
+            <Label layoutX="11.0" layoutY="58.0" prefHeight="24.0" prefWidth="86.0" text="Books" textFill="#1e99a6">
+               <font>
+                  <Font name="Poor Richard" size="29.0" />
+               </font>
+            </Label>
+            <Label fx:id="books_count" layoutX="5.0" prefHeight="43.0" prefWidth="86.0" text="0">
+               <font>
+                  <Font name="Swiss 721 Bold Condensed Outline BT" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="480.0" layoutY="123.0" prefHeight="128.0" prefWidth="179.0">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="186.0" layoutX="-4.0" pickOnBounds="true">
+               <image>
+                  <Image url="@..\imgs\bluesa.jfif" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="112.0" layoutX="8.0" layoutY="33.0" pickOnBounds="true">
+               <image>
+                  <Image url="@..\imgs\icons8-community-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="19.0" layoutX="14.0" layoutY="114.0" onMouseClicked="#goToMembers" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\imgs\icons8-info-64 (1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="members_info" layoutX="12.0" layoutY="113.0" mnemonicParsing="false" onAction="#goToMembers" opacity="0.72" prefHeight="7.0" prefWidth="86.0" text="More Info" textFill="#1c37c1">
+               <font>
+                  <Font name="ArtifaktElement-Black" size="8.0" />
+               </font>
+            </Button>
+            <Label layoutX="86.0" layoutY="1.0" prefHeight="35.0" prefWidth="96.0" text="Members" textFill="#16ab20">
+               <font>
+                  <Font name="Poor Richard" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="member_count" layoutX="1.0" layoutY="-2.0" prefHeight="43.0" prefWidth="69.0" text="0">
+               <font>
+                  <Font name="Swiss 721 Bold Condensed Outline BT" size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="700.0" layoutY="122.0" prefHeight="134.0" prefWidth="179.0">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="194.0" layoutX="-5.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@..\imgs\koicolour.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="69.0" fitWidth="112.0" layoutX="2.0" layoutY="31.0" opacity="0.85" pickOnBounds="true">
+               <image>
+                  <Image url="@..\imgs\issuedmain.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="15.0" layoutY="113.0" onMouseClicked="#goToIssue" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\imgs\icons8-info-64 (1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="issued_info" layoutX="13.0" layoutY="113.0" mnemonicParsing="false" onAction="#goToIssue" opacity="0.71" prefHeight="7.0" prefWidth="86.0" text="More Info" textFill="#1c37c1">
+               <font>
+                  <Font name="ArtifaktElement-Black" size="8.0" />
+               </font>
+            </Button>
+            <Label layoutX="111.0" layoutY="5.0" prefHeight="31.0" prefWidth="69.0" text="Issued" textFill="#5335db">
+               <font>
+                  <Font name="Poor Richard" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="254.0" layoutY="297.0" prefHeight="128.0" prefWidth="179.0">
+         <children>
+            <ImageView fitHeight="134.0" fitWidth="186.0" layoutX="-3.0" layoutY="-3.0" pickOnBounds="true">
+               <image>
+                  <Image url="@..\imgs\def2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="96.0" layoutX="8.0" layoutY="44.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/icons8-request-64%20(2).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="15.0" prefHeight="35.0" prefWidth="112.0" text="Issue Requests" textFill="#e51212">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="issuerequests_count" layoutX="3.0" layoutY="-5.0" prefHeight="35.0" prefWidth="128.0" text="0">
+               <font>
+                  <Font name="Swiss 721 Bold Condensed Outline BT" size="29.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="issue_requestsicon" fitHeight="15.0" fitWidth="19.0" layoutX="15.0" layoutY="109.0" onMouseClicked="#goToRequests" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\imgs\icons8-info-64 (1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="issue_requestsbtn" layoutX="13.0" layoutY="109.0" mnemonicParsing="false" onAction="#goToRequests" opacity="0.72" prefHeight="7.0" prefWidth="86.0" text="More Info" textFill="#1c37c1">
+               <font>
+                  <Font name="ArtifaktElement-Black" size="8.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="31.0" fitWidth="711.0" layoutX="230.0" layoutY="-5.0" opacity="0.47" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\wall1.jfif" />
+         </image>
+      </ImageView>
+      <Label fx:id="issued_count" layoutX="693.0" layoutY="122.0" prefHeight="31.0" prefWidth="96.0" text="0">
+         <font>
+            <Font name="Swiss 721 Bold Condensed Outline BT" size="29.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="36.0" fitWidth="32.0" layoutX="243.0" layoutY="544.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-clock-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="275.0" layoutY="553.0" prefHeight="24.0" prefWidth="86.0" text="7am-10pm" textFill="#2f805d">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="29.0" layoutX="246.0" layoutY="583.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@..\imgs\icons8-phone-64.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="275.0" layoutY="583.0" prefHeight="24.0" prefWidth="112.0" text="1234-5678910" textFill="#2f805d">
+         <font>
+            <Font name="ArtifaktElement-Heavy" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="747.0" layoutY="570.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-info-64.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="aboutlib_info" layoutX="773.0" layoutY="573.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="96.0" text="About Library" textFill="#2f805d">
+         <font>
+            <Font name="ArtifaktElement-Black" size="8.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="24.0" fitWidth="24.0" layoutX="695.0" layoutY="595.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-date-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Date_time_label" layoutX="722.0" layoutY="596.0" prefHeight="17.0" prefWidth="214.0" text="Current date time" textFill="#02013b">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="480.0" layoutY="296.0" prefHeight="134.0" prefWidth="179.0">
+         <children>
+            <ImageView fitHeight="136.0" fitWidth="194.0" layoutX="-5.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/wall2.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="57.0" fitWidth="86.0" layoutX="9.0" layoutY="45.0" opacity="0.85" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/icons8-books-64.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="15.0" fitWidth="15.0" layoutX="15.0" layoutY="113.0" onMouseClicked="#goToHistory" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@..\imgs\icons8-info-64 (1).png" />
+               </image>
+            </ImageView>
+            <Button fx:id="issued_info1" layoutX="13.0" layoutY="113.0" mnemonicParsing="false" onAction="#goToHistory" opacity="0.71" prefHeight="7.0" prefWidth="86.0" text="More Info" textFill="#1c37c1">
+               <font>
+                  <Font name="ArtifaktElement-Black" size="8.0" />
+               </font>
+            </Button>
+            <Label layoutX="52.0" layoutY="5.0" prefHeight="31.0" prefWidth="128.0" text="Issue History" textFill="#5335db">
+               <font>
+                  <Font name="Poor Richard" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

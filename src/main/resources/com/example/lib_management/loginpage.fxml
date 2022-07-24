@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginpage_anchor1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/null" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lib_management.login_controller">
+   <children>
+      <ImageView fx:id="login_image" fitHeight="457.0" fitWidth="343.0" layoutX="370.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\login_bg_image.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="457.0" fitWidth="365.0" layoutX="3.0" opacity="0.55" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\bg.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username_textfield" alignment="CENTER" layoutX="95.0" layoutY="82.0" prefHeight="38.0" prefWidth="204.0" promptText="  Username(First and last name)" />
+      <ImageView fitHeight="32.0" fitWidth="26.0" layoutX="95.0" layoutY="85.0" opacity="0.19" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\headicon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="LOGIN_BUTTON" layoutX="168.0" layoutY="219.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="32.0" prefWidth="52.0" text="LOGIN" textFill="#334761" />
+      <ImageView fx:id="lib_logo" fitHeight="48.0" fitWidth="59.0" layoutX="164.0" layoutY="14.0" opacity="0.75" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\liblogo.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="85.0" layoutY="278.0" prefHeight="25.0" prefWidth="142.0" text="New user? Sign up here -&gt;" textFill="#1a4669">
+         <font>
+            <Font name="Corbel Italic" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="signup_BUTTON" layoutX="229.0" layoutY="275.0" mnemonicParsing="false" onAction="#signupbutton" prefHeight="32.0" prefWidth="66.0" text="SIGN UP" textFill="#334761" />
+      <Label fx:id="forgotpass_label" layoutX="229.0" layoutY="367.0" prefHeight="25.0" prefWidth="100.0" text="Forgot password?" textFill="#112833">
+         <font>
+            <Font name="Romantic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="forgotpass_button" layoutX="223.0" layoutY="367.0" mnemonicParsing="false" onAction="#setForgotpass_label" opacity="0.05" prefHeight="25.0" prefWidth="106.0" />
+      <RadioButton fx:id="user_radiobutton" layoutX="126.0" layoutY="186.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="59.0" selected="true" text="USER">
+         <toggleGroup>
+            <ToggleGroup fx:id="check" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="admin_radiobutton" layoutX="213.0" layoutY="186.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" text="ADMIN" toggleGroup="$check" />
+      <PasswordField fx:id="passwordfield" alignment="CENTER" layoutX="95.0" layoutY="146.0" prefHeight="32.0" prefWidth="204.0" promptText="Enter password" />
+      <ImageView fitHeight="32.0" fitWidth="26.0" layoutX="95.0" layoutY="146.0" opacity="0.2" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\passicon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="18.0" fitWidth="17.0" layoutX="171.0" layoutY="434.0" pickOnBounds="true">
+         <image>
+            <Image url="@..\imgs\icons8-date-64.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="Date_time_label" layoutX="190.0" layoutY="435.0" prefHeight="17.0" prefWidth="175.0" text="Current date time" textFill="#080052">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
